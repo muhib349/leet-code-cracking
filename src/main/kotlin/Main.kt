@@ -1,3 +1,3 @@
 fun main() {
-    println(maxDistance(intArrayOf(2,2,2), intArrayOf(10,10,1)))
+    println(findMaxAverage(intArrayOf(-1), 1))
 }
