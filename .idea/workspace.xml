@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="531ae82b-c7b5-4fe9-a47b-85f5adab6a63" name="Changes" comment="solved is subsequence">
+    <list default="true" id="531ae82b-c7b5-4fe9-a47b-85f5adab6a63" name="Changes" comment="solved maximum average subarray">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/1004. Max Consecutive Ones III.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/1493. Longest Subarray of 1's After Deleting One Element.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/kotlin/1679. Max Number of K-Sum Pairs.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/kotlin/1711. Count Good Meals.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/643. Maximum Average Subarray I.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
@@ -19,6 +20,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
         <option value="Kotlin File" />
       </list>
     </option>
@@ -85,7 +87,11 @@
       <workItem from="1686991729412" duration="5103000" />
       <workItem from="1687769605829" duration="988000" />
       <workItem from="1688038007287" duration="2621000" />
-      <workItem from="1688206582402" duration="4344000" />
+      <workItem from="1688206582402" duration="6901000" />
+      <workItem from="1688577478323" duration="406000" />
+      <workItem from="1688582922553" duration="1788000" />
+      <workItem from="1688588910515" duration="178000" />
+      <workItem from="1688639877473" duration="1496000" />
     </task>
     <task id="LOCAL-00001" summary="repository created">
       <created>1684944677446</created>
@@ -150,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688038203087</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="solved maximum average subarray">
+      <created>1688415096720</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1688415096720</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +178,8 @@
     <MESSAGE value="solved - 334" />
     <MESSAGE value="String compression" />
     <MESSAGE value="solved is subsequence" />
-    <option name="LAST_COMMIT_MESSAGE" value="solved is subsequence" />
+    <MESSAGE value="solved maximum average subarray" />
+    <option name="LAST_COMMIT_MESSAGE" value="solved maximum average subarray" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -179,6 +193,11 @@
           <url>file://$PROJECT_DIR$/src/main/kotlin/643. Maximum Average Subarray I.kt</url>
           <line>14</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/1004. Max Consecutive Ones III.kt</url>
+          <line>8</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

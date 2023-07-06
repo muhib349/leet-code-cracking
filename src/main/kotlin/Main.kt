@@ -1,3 +1,3 @@
 fun main() {
-    println(findMaxAverage(intArrayOf(-1), 1))
+    println(longestSubarray(intArrayOf(1,1,1,0,1,1)))
 }
