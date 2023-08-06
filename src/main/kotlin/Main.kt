@@ -1,3 +1,5 @@
+import biweeklycontest109.sortVowels
+
 fun main() {
-    println(removeStars("leet**cod*e"))
+
 }
