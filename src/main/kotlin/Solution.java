@@ -709,6 +709,42 @@ public class Solution {
         return sum;
     }
 
+    public ListNode[] splitListToParts(ListNode head, int k) {
+        ListNode[] result = new ListNode[k];
+
+        int length = 0;
+
+        ListNode current = head;
+
+        while (current != null){
+            length++;
+            current = current.getNext();
+        }
+
+        int partSize = length / k;
+        int reminder = length % k;
+        current = head;
+
+        for(int i = 0; i < k; i++){
+            int partLength = partSize + (i < reminder ? 1 : 0);
+            result[i] = current;
+
+            for (int j = 0; j < partLength - 1; j++) {
+                if (current != null) {
+                    current = current.getNext();
+                }
+            }
+
+            if (current != null) {
+                ListNode temp = current.getNext();
+                current.setNext(null);
+                current = temp;
+            }
+        }
+
+        return result;
+    }
+
     public static void main(String[] args) {
         Solution solution = new Solution();
 

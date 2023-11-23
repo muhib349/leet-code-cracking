@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="531ae82b-c7b5-4fe9-a47b-85f5adab6a63" name="Changes" comment="solved max consecutive ones - 3">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/1679. Max Number of K-Sum Pairs.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/1711. Count Good Meals.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/2390. Removing Stars From a String.kt" afterDir="false" />
+    <list default="true" id="531ae82b-c7b5-4fe9-a47b-85f5adab6a63" name="Changes" comment="added java class, solution">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +19,9 @@
       <list>
         <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -44,6 +45,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -55,8 +58,21 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Personal-Development\leet-code-cracking\src\main\kotlin" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Solution">
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Solution" />
+      <module name="leet-code-cracking" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="leet-code-cracking" />
@@ -64,8 +80,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Solution" />
+      <item itemvalue="Kotlin.MainKt" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution" />
         <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
@@ -90,7 +111,34 @@
       <workItem from="1688577478323" duration="406000" />
       <workItem from="1688582922553" duration="1788000" />
       <workItem from="1688588910515" duration="178000" />
-      <workItem from="1688639877473" duration="4686000" />
+      <workItem from="1688639877473" duration="10026000" />
+      <workItem from="1688722523603" duration="4681000" />
+      <workItem from="1688892076675" duration="4182000" />
+      <workItem from="1688975494052" duration="30000" />
+      <workItem from="1688981766474" duration="2037000" />
+      <workItem from="1689418088207" duration="7475000" />
+      <workItem from="1689611182287" duration="9067000" />
+      <workItem from="1689931769971" duration="11031000" />
+      <workItem from="1690283779607" duration="1100000" />
+      <workItem from="1690361617623" duration="2298000" />
+      <workItem from="1690466248917" duration="12466000" />
+      <workItem from="1690834465495" duration="9775000" />
+      <workItem from="1691049107077" duration="9584000" />
+      <workItem from="1691278914496" duration="5981000" />
+      <workItem from="1692658520211" duration="4102000" />
+      <workItem from="1693309588200" duration="31000" />
+      <workItem from="1693560601576" duration="3502000" />
+      <workItem from="1693728758617" duration="3694000" />
+      <workItem from="1694075242516" duration="3626000" />
+      <workItem from="1694214292776" duration="3253000" />
+      <workItem from="1694473602308" duration="1204000" />
+      <workItem from="1695201700440" duration="1511000" />
+      <workItem from="1695718222291" duration="18466000" />
+      <workItem from="1697359398703" duration="986000" />
+      <workItem from="1697539263765" duration="1522000" />
+      <workItem from="1699309903238" duration="965000" />
+      <workItem from="1700008462285" duration="2740000" />
+      <workItem from="1700389309254" duration="5097000" />
     </task>
     <task id="LOCAL-00001" summary="repository created">
       <created>1684944677446</created>
@@ -176,7 +224,70 @@
       <option name="project" value="LOCAL" />
       <updated>1688641956415</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="solved removing stars from a string">
+      <created>1688647797327</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1688647797327</updated>
+    </task>
+    <task id="LOCAL-00014" summary="solved 1732">
+      <created>1688724986530</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1688724986530</updated>
+    </task>
+    <task id="LOCAL-00015" summary="solved 724">
+      <created>1688841744719</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1688841744719</updated>
+    </task>
+    <task id="LOCAL-00016" summary="solved 1207">
+      <created>1688861520750</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1688861520750</updated>
+    </task>
+    <task id="LOCAL-00017" summary="solved 2352">
+      <created>1689418170725</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1689418170725</updated>
+    </task>
+    <task id="LOCAL-00018" summary="participated bi weekly contest 109">
+      <created>1690101835814</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1690101835814</updated>
+    </task>
+    <task id="LOCAL-00019" summary="solved 122">
+      <created>1690184109283</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1690184109283</updated>
+    </task>
+    <task id="LOCAL-00020" summary="practicing backtracking">
+      <created>1691319814356</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1691319814356</updated>
+    </task>
+    <task id="LOCAL-00021" summary="added java class, solution">
+      <created>1700008573787</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1700008573787</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +305,16 @@
     <MESSAGE value="solved maximum average subarray" />
     <MESSAGE value="solved longest subarray 0f 1, after deleting one item" />
     <MESSAGE value="solved max consecutive ones - 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="solved max consecutive ones - 3" />
+    <MESSAGE value="solved removing stars from a string" />
+    <MESSAGE value="solved 1732" />
+    <MESSAGE value="solved 724" />
+    <MESSAGE value="solved 1207" />
+    <MESSAGE value="solved 2352" />
+    <MESSAGE value="participated bi weekly contest 109" />
+    <MESSAGE value="solved 122" />
+    <MESSAGE value="practicing backtracking" />
+    <MESSAGE value="added java class, solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="added java class, solution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -218,6 +338,56 @@
           <url>file://$PROJECT_DIR$/src/main/kotlin/2390. Removing Stars From a String.kt</url>
           <line>4</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/2095. Delete the Middle Node of a Linked List.kt</url>
+          <line>61</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/2095. Delete the Middle Node of a Linked List.kt</url>
+          <line>127</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Solution.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Solution.java</url>
+          <line>281</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Solution.java</url>
+          <line>530</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Solution.java</url>
+          <line>581</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Solution.java</url>
+          <line>570</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Solution.java</url>
+          <line>612</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Solution.java</url>
+          <line>693</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Solution.java</url>
+          <line>751</line>
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
