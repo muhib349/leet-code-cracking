@@ -745,6 +745,37 @@ public class Solution {
         return result;
     }
 
+    /**
+     * 2125. Number of Laser Beams in a Bank
+     * @param bank
+     * @return
+     */
+    public int numberOfBeams(String[] bank) {
+        List<Integer> rows = new ArrayList<>();
+
+        int beam = 0;
+        for(String row: bank){
+            int count = 0;
+            for(int i = 0; i < row.length(); i++){
+                if(row.charAt(i) == '1'){
+                    count++;
+                }
+            }
+            if(count != 0){
+                rows.add(count);
+            }
+
+            count = 0;
+        }
+
+        for(int i = 1; i < rows.size(); i++){
+            int a = rows.get(i) * rows.get(i - 1);
+
+            beam += a;
+        }
+        return beam;
+    }
+
     public static void main(String[] args) {
         Solution solution = new Solution();
 
