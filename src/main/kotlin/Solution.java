@@ -776,6 +776,36 @@ public class Solution {
         return beam;
     }
 
+    /**
+     * 1769. Minimum Number of Operations to Move All Balls to Each Box
+     * @param boxes
+     * @return
+     */
+    public int[] minOperations(String boxes) {
+        List<Integer> balls = new ArrayList<>();
+
+        int[] res = new int[boxes.length()];
+
+        for(int i = 0; i < boxes.length(); i++){
+            if(boxes.charAt(i) == '1'){
+                balls.add(i);
+            }
+        }
+
+        for(int i = 0; i < boxes.length(); i++){
+            int move = 0;
+
+            for(int j = 0; j < balls.size(); j++){
+                move += Math.abs(i - balls.get(j));
+            }
+
+            res[i] = move;
+        }
+
+        return res;
+
+    }
+
     public static void main(String[] args) {
         Solution solution = new Solution();
 
