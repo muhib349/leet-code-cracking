@@ -806,6 +806,36 @@ public class Solution {
 
     }
 
+    /**
+     * 496. Next Greater Element I
+     * @param nums1
+     * @param nums2
+     * @return
+     */
+    public int[] nextGreaterElement(int[] nums1, int[] nums2) {
+        Map<Integer, Integer> map = new HashMap<>();
+        int[] ans = new int[nums1.length];
+        Arrays.fill(ans, -1);
+
+        for(int i = 0; i < nums2.length; i++){
+            map.put(nums2[i], i);
+        }
+
+        for(int i = 0; i < nums1.length; i++){
+            int idx = map.get(nums1[i]);
+
+            while (idx < nums2.length){
+                if(nums1[i] < nums2[idx]){
+                    ans[i] = nums2[idx];
+                    break;
+                }
+                idx++;
+            }
+        }
+
+        return ans;
+    }
+
     public static void main(String[] args) {
         Solution solution = new Solution();
 
