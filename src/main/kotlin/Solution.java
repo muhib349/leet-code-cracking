@@ -836,6 +836,32 @@ public class Solution {
         return ans;
     }
 
+    /**
+     * 503. Next Greater Element II
+     * @param nums
+     * @return
+     */
+    public int[] nextGreaterElements(int[] nums) {
+        int[] ans = new int[nums.length];
+        Arrays.fill(ans, -1);
+        Stack<Integer> stack = new Stack<>();
+
+        int n = nums.length;
+        for(int i = 0; i < n*2; i++){
+            int idx = i % n;
+
+            while(!stack.isEmpty() && nums[stack.peek()] < nums[idx]){
+                ans[stack.pop()] = nums[idx];
+            }
+
+            if(idx < n){
+                stack.push(idx);
+            }
+        }
+
+        return ans;
+    }
+
     public static void main(String[] args) {
         Solution solution = new Solution();
 
